@@ -37,12 +37,6 @@ function pushColoredTri(verts6, rgba) {
 
 // Helper: one "stroke" = one triangle wedge from p1->p2 with thickness t
 function strokeTri(p1, p2, thick, col) {
-const x1 = p1[0], y1 = p1[1];
-const x2 = p2[0], y2 = p2[1];
-const dx = x2 - x1, dy = y2 - y1;
-const len = Math.sqrt(dx*dx + dy*dy);
-if (len === 0) return;
-
 // perpendicular unit
 const px = -dy / len;
 const py =  dx / len;
@@ -53,6 +47,4 @@ const y3 = y1 + py * thick;
 
 pushColoredTri([x1, y1, x2, y2, x3, y3], col);
 }
-
-I also used chatGPT for these lines as well. 
 
