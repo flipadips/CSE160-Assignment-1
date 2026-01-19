@@ -48,3 +48,4 @@ const y3 = y1 + py * thick;
 pushColoredTri([x1, y1, x2, y2, x3, y3], col);
 }
 
+I also had used ChatGPT to get the right coordinates to even out the triangles for my picture.
